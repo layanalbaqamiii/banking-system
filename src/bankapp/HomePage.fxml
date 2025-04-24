@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="270.0" style="-fx-background-color: DARKSLATEGRAY;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankapp.homePageController">
+   <children>
+      <BorderPane layoutX="46.0" layoutY="77.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="70.0" prefWidth="270.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="14.0" layoutY="6.0" prefHeight="27.0" prefWidth="33.0" text="Hello!" textFill="WHITE" />
+                  <Label fx:id="nameOutPut" layoutX="10.0" layoutY="29.0" prefHeight="29.0" prefWidth="53.0" textFill="WHITE" />
+                  <Label fx:id="totalAmount" layoutX="103.0" layoutY="40.0" prefHeight="36.0" prefWidth="70.0" text="9,340.00" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="87.0" layoutY="47.0" text="\$" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="103.0" layoutY="69.0" text="Total balance" textFill="WHITE">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="382.0" prefWidth="270.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" height="395.0" layoutX="-8.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" width="286.0" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="8.0" />
+                  <HBox layoutX="4.0" layoutY="14.0" prefHeight="59.0" prefWidth="263.0">
+                     <children>
+                        <Button fx:id="transferButton" mnemonicParsing="false" onAction="#transferButtonAction" prefHeight="55.0" prefWidth="53.0" style="-fx-background-color: #88a6a6; -fx-background-radius: 100;" textFill="#f0f0f0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/transfer.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="depositButton" mnemonicParsing="false" onAction="#depositButtonAction" prefHeight="55.0" prefWidth="53.0" style="-fx-background-color: #88a6a6; -fx-background-radius: 100;" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/deposit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="withdrawButton" mnemonicParsing="false" onAction="#withdrawButtonAction" prefHeight="55.0" prefWidth="53.0" style="-fx-background-color: #88a6a6; -fx-background-radius: 100;" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/withdraw1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="moreButton" mnemonicParsing="false" onAction="#moreButtonAction" prefHeight="55.0" prefWidth="53.0" style="-fx-background-color: #88a6a6; -fx-background-radius: 100;" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/more1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label layoutX="20.0" layoutY="78.0" text="Transfer" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="78.0" prefHeight="15.0" prefWidth="39.0" text="Deposit" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="146.0" layoutY="78.0" text="Withdraw" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="221.0" layoutY="78.0" text="More" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="106.0" text="Cards" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="viewAllCards" layoutX="222.0" layoutY="108.0" onAction="#cardsButtonAction" text="view all" textFill="WHITE" underline="true">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Hyperlink>
+                  <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#a1a5a8" height="56.0" layoutX="14.0" layoutY="140.0" opacity="0.26" stroke="BLACK" strokeType="INSIDE" width="244.0" />
+                  <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#a1a5a8" height="55.0" layoutX="14.0" layoutY="196.0" opacity="0.26" stroke="BLACK" strokeType="INSIDE" width="244.0" AnchorPane.topAnchor="196.0" />
+                  <Button fx:id="visaCard" layoutX="20.0" layoutY="145.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 100; -fx-background-color: WHITE;">
+                     <graphic>
+                        <ImageView fitHeight="9.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/visa1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="70.0" layoutY="148.0" prefHeight="19.0" prefWidth="62.0" text="Visa Card" textFill="WHITE" />
+                  <Label fx:id="accountNum" layoutX="71.0" layoutY="169.0" opacity="0.35" text="4423 7689 1133" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cardAmount" layoutX="196.0" layoutY="149.0" text="\$5,000.00" textFill="WHITE" />
+                  <Label fx:id="date" layoutX="210.0" layoutY="169.0" opacity="0.35" text="11/15" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="MasterCard" layoutX="20.0" layoutY="201.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: WHITE; -fx-background-radius: 100;">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/MASTERCARD.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="71.0" layoutY="204.0" prefHeight="16.0" prefWidth="82.0" text="Master Card" textFill="WHITE" />
+                  <Label layoutX="71.0" layoutY="221.0" opacity="0.35" prefHeight="26.0" prefWidth="78.0" text="1234 9983 6763" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="196.0" layoutY="204.0" text="\$4,340.00" textFill="WHITE" />
+                  <Label layoutX="210.0" layoutY="226.0" opacity="0.35" text="03/10" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="258.0" text="Statics" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="viewAllStatics" layoutX="222.0" layoutY="260.0" text="view all" textFill="WHITE" underline="true">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Hyperlink>
+                  <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#a1a5a8" height="93.0" layoutX="26.0" layoutY="289.0" opacity="0.26" stroke="BLACK" strokeType="INSIDE" width="107.0" />
+                  <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#a1a5a8" height="93.0" layoutX="140.0" layoutY="289.0" opacity="0.26" stroke="BLACK" strokeType="INSIDE" width="109.0" />
+                  <Circle fill="#60b36e" layoutX="54.0" layoutY="316.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Circle fill="#c74d3f" layoutX="166.0" layoutY="316.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="37.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 310;">
+                     <image>
+                        <Image url="@../image/arrow.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="42.0" layoutX="149.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 55;">
+                     <image>
+                        <Image url="@../image/arrow.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="38.0" layoutY="340.0" opacity="0.26" text="Income" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="354.0" prefHeight="24.0" prefWidth="46.0" text="\$100.00" textFill="WHITE" />
+                  <Label layoutX="151.0" layoutY="357.0" text="\$35.00" textFill="WHITE" />
+                  <Label layoutX="149.0" layoutY="340.0" opacity="0.26" prefHeight="15.0" prefWidth="45.0" text="Outcome" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="-4.0" layoutY="380.0" prefHeight="47.0" prefWidth="279.0" style="-fx-background-color: BLACK;">
+                     <children>
+                        <Button mnemonicParsing="false" opacity="0.2" prefHeight="50.0" prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" right="-1.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="homePageButton" mnemonicParsing="false" opacity="0.2" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: WHITE;">
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/HOME.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="staticsButton" mnemonicParsing="false" onAction="#staticsButtonAction" opacity="0.2" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: WHITE;">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="-1.0" top="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/static.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="cardsButton" mnemonicParsing="false" onAction="#cardsButtonAction" opacity="0.2" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: WHITE;">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="-1.0" top="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/cards.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="profileButton" mnemonicParsing="false" onAction="#profileButtonAction" opacity="0.2" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: WHITE;">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="-1.0" top="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/profile.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" opacity="0.2" prefHeight="50.0" prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="-1.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

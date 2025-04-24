@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="270.0" style="-fx-background-color: DARKSLATEGRAY;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankapp.homePageController">
+   <children>
+      <ImageView fitHeight="86.0" fitWidth="91.0" layoutX="92.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/profile-circle-icon-512x512-zxne30hp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="240.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/568182.png" />
+         </image>
+      </ImageView>
+      <Label layoutY="8.0" text=" Profile &amp; Setting" textFill="#c4e4de">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Line endX="169.0" layoutX="100.0" layoutY="192.0" opacity="0.43" startX="-100.0" stroke="#c4e4de" />
+      <Label layoutX="11.0" layoutY="234.0" text="Change Password" textFill="#c4e4de">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="264.0" text="My Cards" textFill="#c4e4de">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="292.0" text="Report" textFill="#c4e4de">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="322.0" text="Setting" textFill="#c4e4de">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="241.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/32213.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="242.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/32213.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="242.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/32213.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="240.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/32213.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logOut" layoutX="85.0" layoutY="387.0" mnemonicParsing="false" onAction="#logOutButtonAction" prefHeight="28.0" prefWidth="91.0" style="-fx-background-color: #f8acac;" text="Log Out">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="goBack" layoutY="30.0" mnemonicParsing="false" onAction="#goBackButtonAction" prefHeight="32.0" prefWidth="45.0" style="-fx-background-color: Transparent;">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+               <image>
+                  <Image url="@../image/arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Copyright (c) 2017, Gluon and/or its affiliates.
+    All rights reserved. Use is subject to license terms.
+
+    This file is available and licensed under the following license:
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+
+   - Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+   - Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in
+     the documentation and/or other materials provided with the distribution.
+   - Neither the name of Oracle Corporation and Gluon nor the names of its
+     contributors may be used to endorse or promote products derived
+     from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="270.0" style="-fx-background-color: DARKSLATEGRAY;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankapp.homePageController">
+   <children>
+      <Circle fill="#a1f8f0" layoutX="300.0" layoutY="93.0" opacity="0.38" radius="209.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#96f2e8" layoutX="4.0" layoutY="536.0" opacity="0.51" radius="162.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#307269" height="58.0" layoutX="197.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="59.0" />
+      <Circle fill="#69c3b8" layoutX="227.0" layoutY="43.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="194.0" layoutY="73.0" prefHeight="18.0" prefWidth="65.0" text="Client Name.." textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="76.0" layoutY="82.0" prefHeight="44.0" prefWidth="116.0" text="Your Cards" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="visaC" arcHeight="5.0" arcWidth="5.0" height="111.0" layoutX="37.0" layoutY="123.0" stroke="#073e4f" strokeType="INSIDE" strokeWidth="2.0" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="202.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.8242280285035629" endY="1.0" startX="0.9097387173396675" startY="0.332541567695962">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.07456140220165253" green="0.44736841320991516" blue="0.4287280738353729" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="51.0" layoutY="160.0" text="CARD NUMBER">
+         <font>
+            <Font name="Wingdings 2" size="6.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="168.0" prefHeight="22.0" prefWidth="103.0" text="4423  7689">
+         <font>
+            <Font name="Wingdings 2" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="167.0" prefHeight="22.0" prefWidth="51.0" text="1133">
+         <font>
+            <Font name="Wingdings 2" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="198.0" text="VALID">
+         <font>
+            <Font name="Wingdings 2" size="6.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="206.0" text="11/15">
+         <font>
+            <Font name="Wingdings 2" size="6.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="198.0" text="CVV">
+         <font>
+            <Font name="Wingdings 2" size="6.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="206.0" text="713">
+         <font>
+            <Font name="Wingdings 2" size="6.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="c2" arcHeight="5.0" arcWidth="5.0" height="111.0" layoutX="37.0" layoutY="253.0" stroke="#14074f" strokeType="INSIDE" strokeWidth="2.0" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="202.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.8052256532066508" endY="1.0" startX="0.6769596199524941" startY="0.332541567695962">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7419529557228088" green="0.5551900863647461" blue="0.8157894611358643" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.7419529557228088" green="0.5551900863647461" blue="0.8157894611358643" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8053691275167784">
+                     <color>
+                        <Color red="0.13872000575065613" green="0.11219999939203262" blue="0.5099999904632568" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.13872000575065613" green="0.11219999939203262" blue="0.5099999904632568" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="51.0" layoutY="290.0" text="CARD NUMBER">
+         <font>
+            <Font name="Wingdings 2" size="6.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="298.0" prefHeight="9.0" prefWidth="168.0" text="1234  9983">
+         <font>
+            <Font name="Wingdings 2" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="297.0" prefHeight="22.0" prefWidth="51.0" text="6763">
+         <font>
+            <Font name="Wingdings 2" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="328.0" text="VALID">
+         <font>
+            <Font name="Wingdings 2" size="6.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="336.0" text="03/10">
+         <font>
+            <Font name="Wingdings 2" size="6.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="328.0" text="CVV">
+         <font>
+            <Font name="Wingdings 2" size="6.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="336.0" text="200">
+         <font>
+            <Font name="Wingdings 2" size="6.0" />
+         </font>
+      </Label>
+      <Circle fill="#dd2121" layoutX="200.0" layoutY="277.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#f5f111" layoutX="215.0" layoutY="277.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Rectangle fx:id="c3" arcHeight="5.0" arcWidth="5.0" height="111.0" layoutX="37.0" layoutY="386.0" stroke="#4f3607" strokeType="INSIDE" strokeWidth="2.0" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="202.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.8242280285035629" endY="1.0" startX="0.0023752969121141054" startY="0.332541567695962">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6842105388641357" green="0.15521442890167236" blue="0.15521442890167236" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.6842105388641357" green="0.15521442890167236" blue="0.15521442890167236" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8815789222717285" green="0.8139640092849731" blue="0.30202242732048035" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="51.0" layoutY="423.0" text="CARD NUMBER">
+         <font>
+            <Font name="Wingdings 2" size="6.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="431.0" prefHeight="9.0" prefWidth="168.0" text="1287  7654">
+         <font>
+            <Font name="Wingdings 2" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="430.0" prefHeight="22.0" prefWidth="51.0" text="7523">
+         <font>
+            <Font name="Wingdings 2" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="461.0" text="VALID">
+         <font>
+            <Font name="Wingdings 2" size="6.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="469.0" text="03/11">
+         <font>
+            <Font name="Wingdings 2" size="6.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="461.0" text="CVV">
+         <font>
+            <Font name="Wingdings 2" size="6.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="469.0" text="605">
+         <font>
+            <Font name="Wingdings 2" size="6.0" />
+         </font>
+      </Label>
+      <Circle fill="#dd2121" layoutX="200.0" layoutY="410.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#f5f111" layoutX="215.0" layoutY="410.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Button fx:id="goBack" layoutX="7.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBackButtonAction" prefHeight="30.0" prefWidth="41.0" style="-fx-background-color: Transparent;">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+               <image>
+                  <Image url="@../image/arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="18.0" fitWidth="51.0" layoutX="178.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/visa1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

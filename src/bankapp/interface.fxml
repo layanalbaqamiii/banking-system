@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="517.0" prefWidth="270.0" style="-fx-background-color: DARKSLATEGRAY;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankapp.UIController">
+   <children>
+      <ImageView fitHeight="163.0" fitWidth="120.0" layoutX="78.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Bank%20logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="interfaceSignUpButton" layoutX="67.0" layoutY="323.0" mnemonicParsing="false" onAction="#interfaceSignUp" prefHeight="35.0" prefWidth="135.0" text="Sign Up">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="interfaceLogInButton" layoutX="67.0" layoutY="373.0" mnemonicParsing="false" onAction="#interfaceLogIn" prefHeight="35.0" prefWidth="135.0" text="Log In">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

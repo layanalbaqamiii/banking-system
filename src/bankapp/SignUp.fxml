@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="signUpScene" prefHeight="517.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankapp.UIController">
+   <children>
+      <Pane prefHeight="517.0" prefWidth="270.0" style="-fx-background-color: DARKSLATEGRAY;">
+         <children>
+            <Label layoutX="27.0" layoutY="75.0" text="Sign UP" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" layoutX="30.0" layoutY="122.0" prefHeight="15.0" prefWidth="30.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameField" layoutX="28.0" layoutY="145.0" onAction="#initializable" onKeyPressed="#initializable" onKeyTyped="#initializable" onMouseClicked="#initializable" onMouseEntered="#initializable" onMouseExited="#initializable" onMouseMoved="#initializable" opacity="0.15" prefHeight="27.0" prefWidth="217.0">
+               <effect>
+                  <Lighting bumpInput="$null">
+                     
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Button fx:id="signUpButton" layoutX="68.0" layoutY="435.0" mnemonicParsing="false" onAction="#handleSignUpButtonAction" prefHeight="29.0" prefWidth="134.0" text="Sign Up" textAlignment="CENTER" textFill="#333333cc" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               
+            </Button>
+            <Label layoutX="30.0" layoutY="182.0" prefHeight="15.0" prefWidth="75.0" text="Account number" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="accNumberField" layoutX="28.0" layoutY="206.0" opacity="0.15" prefHeight="27.0" prefWidth="217.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     
+                  </Lighting>
+               </effect>
+            </TextField>
+            <Label layoutX="29.0" layoutY="243.0" prefHeight="16.0" prefWidth="20.0" text="Age" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="AgeField" layoutX="28.0" layoutY="264.0" opacity="0.15" prefHeight="27.0" prefWidth="217.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     
+                  </Lighting>
+               </effect>
+            </TextField>
+            <Label layoutX="30.0" layoutY="307.0" prefHeight="16.0" prefWidth="66.0" text="Phone number" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordLabel" layoutX="30.0" layoutY="369.0" prefHeight="15.0" prefWidth="44.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordField" layoutX="29.0" layoutY="391.0" opacity="0.15" prefHeight="7.0" prefWidth="217.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null">
+                    
+                  </Lighting>
+               </effect>
+            </PasswordField>
+            <TextField fx:id="phoneNumberField" layoutX="29.0" layoutY="329.0" opacity="0.15" prefHeight="27.0" prefWidth="217.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     
+                  </Lighting>
+               </effect>
+            </TextField>
+            <AnchorPane layoutX="190.0" layoutY="14.0" prefHeight="68.0" prefWidth="56.0">
+               <children>
+                  <ImageView fitHeight="57.0" fitWidth="44.0" layoutX="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Bank%20logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="goToStartUp" layoutX="-10.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToStartUp" prefHeight="47.0" prefWidth="75.0" style="-fx-background-color: Transparent;">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+                     <image>
+                        <Image url="@../image/arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Circle fx:id="c2" fill="#7b9c9cb1" layoutX="14.0" layoutY="502.0" radius="67.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Circle fx:id="c1" fill="#7b9c9cb2" layoutX="293.0" layoutY="-10.0" opacity="0.52" radius="92.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Label layoutX="93.0" layoutY="29.0" text="Welcome" textFill="#d7b8b8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="welcome" layoutX="88.0" layoutY="46.0" prefHeight="17.0" prefWidth="62.0" textFill="#d7b8b8" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
